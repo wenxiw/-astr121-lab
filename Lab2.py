@@ -56,8 +56,8 @@ print (diff_Hipparcos_measured)
 plt.figure()
 plt.scatter(distance, diff_Hipparcos_measured)
 plt.title("difference between Hipparcos vs. data")
-plt.xlabel("distance")
-plt.ylabel("diff_Hipparcos_measured")
+plt.xlabel("distance (pc)")
+plt.ylabel("diff_Hipparcos_measured (pc)")
 plt.errorbar(distance, diff_Hipparcos_measured, yerr = sigma_d, fmt =  ".")
 
 
