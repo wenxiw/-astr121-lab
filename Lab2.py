@@ -53,12 +53,14 @@ Hipparcos = np.array([4.514, 18.4849, 50.5454, 1.9485, 3.182, 4.953, 1.471, 25.1
 diff_Hipparcos_measured = np.abs(Hipparcos - distance)
 print (diff_Hipparcos_measured)
 
+data_set = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
 plt.figure()
-plt.scatter(distance, diff_Hipparcos_measured)
+plt.scatter(data_set, diff_Hipparcos_measured)
 plt.title("difference between Hipparcos vs. data")
-plt.xlabel("distance (pc)")
+plt.xlabel("data_set #")
 plt.ylabel("diff_Hipparcos_measured (pc)")
-plt.errorbar(distance, diff_Hipparcos_measured, yerr = sigma_d, fmt =  ".")
+plt.errorbar(data_set, diff_Hipparcos_measured, yerr = sigma_d, fmt =  ".")
 
 
 
